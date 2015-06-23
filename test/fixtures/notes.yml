@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  teacher_ID: MyString
+  student_ID: MyString
+  Note_Date: 2015-06-22
+  Note_Subject: MyString
+  Note_Type: MyString
+  Penalty: 9.99
+
+two:
+  teacher_ID: MyString
+  student_ID: MyString
+  Note_Date: 2015-06-22
+  Note_Subject: MyString
+  Note_Type: MyString
+  Penalty: 9.99

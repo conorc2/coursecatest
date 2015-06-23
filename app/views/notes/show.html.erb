@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Teacher id:</strong>
+  <%= @note.teacher_ID %>
+</p>
+
+<p>
+  <strong>Student id:</strong>
+  <%= @note.student_ID %>
+</p>
+
+<p>
+  <strong>Note date:</strong>
+  <%= @note.Note_Date %>
+</p>
+
+<p>
+  <strong>Note subject:</strong>
+  <%= @note.Note_Subject %>
+</p>
+
+<p>
+  <strong>Note type:</strong>
+  <%= @note.Note_Type %>
+</p>
+
+<p>
+  <strong>Penalty:</strong>
+  <%= @note.Penalty %>
+</p>
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>

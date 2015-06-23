@@ -1,0 +1,11 @@
+applications:
+- servies:
+  - SQL Database-hm
+  disk_quota: 1024M
+  host: coursecatestapp2
+  name: coursecatestapp2
+  path: .
+  domain: mybluemix.net
+  instances: 1
+  memory: 256M
+  buildpack: https://github.com/ibmdb/db2rubybuildpack

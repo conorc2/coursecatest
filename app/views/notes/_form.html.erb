@@ -1,0 +1,41 @@
+<%= form_for(@note) do |f| %>
+  <% if @note.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@note.errors.count, "error") %> prohibited this note from being saved:</h2>
+
+      <ul>
+      <% @note.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :teacher_ID %><br>
+    <%= f.text_field :teacher_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :student_ID %><br>
+    <%= f.text_field :student_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Note_Date %><br>
+    <%= f.date_select :Note_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Note_Subject %><br>
+    <%= f.text_field :Note_Subject %>
+  </div>
+  <div class="field">
+    <%= f.label :Note_Type %><br>
+    <%= f.text_field :Note_Type %>
+  </div>
+  <div class="field">
+    <%= f.label :Penalty %><br>
+    <%= f.text_field :Penalty %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
